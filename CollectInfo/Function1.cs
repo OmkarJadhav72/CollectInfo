@@ -50,7 +50,8 @@ namespace CollectInfo
 
             await tableClient.AddEntityAsync(entity);
 
-            _logger.LogInformation($"User {user.UserName} stored and queued.");
+            _logger.LogInformation($"User {user.UserName} stored and queued dddddd.");
+            Console.WriteLine("Hi");
 
             return new OkObjectResult($"User {user.UserName} stored successfully.");
         }
